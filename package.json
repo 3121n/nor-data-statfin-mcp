@@ -1,0 +1,55 @@
+{
+  "name": "@nor-data/statfin-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for official statistics from Statistics Finland (Tilastokeskus) StatFin database via the PxWeb API: search 3000+ tables, read table metadata and fetch data as JSON-stat2. No API key required.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "drist-statfin-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "data/tables-index.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "build-index": "node scripts/build-index.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3121n/nor-data-statfin-mcp.git"
+  },
+  "homepage": "https://github.com/3121n/nor-data-statfin-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/3121n/nor-data-statfin-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "finland",
+    "statistics-finland",
+    "tilastokeskus",
+    "statfin",
+    "pxweb",
+    "json-stat",
+    "open-data",
+    "statistics"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "@types/node": "^22.10.0"
+  },
+  "mcpName": "io.github.3121n/statfin-mcp"
+}
