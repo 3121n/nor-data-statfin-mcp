@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.3121n/statfin-mcp",
-  "description": "Official statistics from Statistics Finland (StatFin/PxWeb): search tables, read metadata, fetch data as JSON-stat2.",
+  "description": "Statistics Finland (StatFin/PxWeb): search tables, read metadata, fetch JSON-stat2 data.",
   "repository": {
     "url": "https://github.com/3121n/nor-data-statfin-mcp",
     "source": "github"
